@@ -1,9 +1,10 @@
 import React from 'react';
+import Container from './Container';
 
 const Navbar = () => {
     return (
         <div>
-            <p>navbar</p>
+            <Container><p>navbar</p></Container>
         </div>
     );
 };

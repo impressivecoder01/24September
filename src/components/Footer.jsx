@@ -1,9 +1,12 @@
 import React from 'react';
+import Container from './Container';
 
 const Footer = () => {
     return (
         <div>
-            <p>Footer</p>
+            <Container>
+                <p>Footer</p>
+            </Container>
         </div>
     );
 };
