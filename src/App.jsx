@@ -11,7 +11,7 @@ function App() {
    const [toggleStatus, setToggleStatus] = useState("All")
   
   const fetchIssues = async()=>{
-    const result = await fetch('https://jsonplaceholder.typicode.com/posts')
+    const result = await fetch('/data.json')
     return result.json()
   }
 
@@ -22,7 +22,7 @@ function App() {
      <Navbar></Navbar>
     </nav>
     <main >
-      <Suspense>
+      <Suspense fallback={'Loading...'}>
 
       <Management fetchPromise={fetchPromise}></Management>
       </Suspense>
