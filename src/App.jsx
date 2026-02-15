@@ -24,7 +24,7 @@ function App() {
     <main >
       <Suspense fallback={'Loading...'}>
 
-      <Management fetchPromise={fetchPromise}></Management>
+      <Management toggleStatus ={toggleStatus} fetchPromise={fetchPromise}></Management>
       </Suspense>
 
       {/* <Container>

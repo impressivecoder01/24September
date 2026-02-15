@@ -1,8 +1,9 @@
 // import React, { useState } from 'react';
 import Container from './Container';
+import Management from './Management';
 
 const ToggleBtn = ({setToggleStatus, toggleStatus}) => {
-   
+   console.log(toggleStatus)
     return (
         <>
         <Container>
@@ -12,6 +13,7 @@ const ToggleBtn = ({setToggleStatus, toggleStatus}) => {
         <button onClick={() =>setToggleStatus('Submitted') } className={`toggle-btn ${toggleStatus == 'Submitted' && 'bg-purple-400! text-white'}`}>Submitted</button>
         <button onClick={() =>setToggleStatus('Reviewed') } className={`toggle-btn rounded-r-md ${toggleStatus == 'Reviewed' && 'bg-purple-400! text-white'}`}>Reviewed</button>
       </div>
+      {/* <Management toggleStatus = {toggleStatus}></Management> */}
         </Container>
             
         </>
